@@ -1,0 +1,101 @@
+body {
+  background-color: #f2f2f2 !important;
+}
+
+#logo {
+  width: 160px;
+  min-width: 8vw;
+}
+
+.icon-accessibility {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 9999;
+  width: 70px;
+}
+
+.card {
+  border-radius: 12px !important;
+  transition: all .2s ease-in-out;
+}
+
+
+.card:hover {
+  background-color: #ECF9ED !important;
+}
+
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card a:hover {
+  color: #319b3f;
+}
+
+.card .container-img{
+  overflow: hidden;
+  border-radius: 6px;
+}
+.card .container-img a img {
+transition: all .3s ease-in-out;
+}
+
+.card .container-img a img:hover {
+  transform: scale(1.3);
+}
+
+.carousel {
+  transition: filter .5s ease-in;
+  color: black !important;
+}
+
+.carousel:hover .carousel-item img{ 
+  filter: grayscale(100%);
+  color: #319b3f !important;
+}
+
+
+
+@media (max-width:700px) {
+  #sub-footer {
+   flex-direction: column;
+   gap: 32px;
+  }
+}
+
+@media (max-width:820px) {
+  .content{
+    margin: 32px 16px !important;
+
+  }
+  .my-container{
+    flex-direction: column;
+    gap: 32px;
+  }
+  .my-container .col-8, .my-container .col-4  {
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  .my-container .col-8 .card {
+    max-width: 100% !important;
+  }
+
+  .my-container .col-4 img {
+    width: 60% !important;
+  }
+}
+
+.card-edital {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.card-edital:hover {
+  background-color: #ECF9ED;
+  padding: 16px;
+  border-radius: 24px;
+}
